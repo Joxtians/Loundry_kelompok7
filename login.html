@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - JLF & CO Laundry</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JLF & CO</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="layanan.html" class="nav-link">Layanan</a></li>
+                <li class="nav-item"><a href="tentang.html" class="nav-link">Tentang</a></li>
+                <li class="nav-item"><a href="testimoni.html" class="nav-link">Testimoni</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link btn-login active">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-card">
+                    <h2>Login ke Akun Anda</h2>
+                    <p>Masuk untuk mengakses layanan laundry premium kami</p>
+                    
+                    <form id="loginForm" class="auth-form">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                            <span class="error-message" id="passwordError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary full-width">Login</button>
+                    </form>
+                    
+                    <div class="auth-footer">
+                        <p>Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JLF & CO</h3>
+                    <p>Layanan laundry premium dengan standar kualitas tertinggi untuk pakaian kesayangan Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>Email: info@jlfco.com</p>
+                    <p>Telepon: (021) 1234-5678</p>
+                    <p>Alamat: Jl. Susuk II, Medan</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Link Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="layanan.html">Layanan</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="testimoni.html">Testimoni</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JLF & CO Laundry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

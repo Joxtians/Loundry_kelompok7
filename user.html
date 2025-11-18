@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - JLF & CO Laundry</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- User Navbar -->
+    <nav class="navbar user-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JLF & CO - User</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Kembali ke Situs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link btn-logout" id="logoutBtn">Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- User Dashboard -->
+    <section class="user-dashboard">
+        <div class="container">
+            <h1 class="dashboard-title">Selamat Datang, <span id="userName">User</span>!</h1>
+            
+            <div class="user-stats">
+                <div class="stat-card user-stat">
+                    <h3>5</h3>
+                    <p>Order Aktif</p>
+                </div>
+                <div class="stat-card user-stat">
+                    <h3>12</h3>
+                    <p>Total Order</p>
+                </div>
+                <div class="stat-card user-stat">
+                    <h3>Rp 450.000</h3>
+                    <p>Total Pengeluaran</p>
+                </div>
+            </div>
+            
+            <div class="dashboard-content">
+                <div class="dashboard-section">
+                    <h2>Order Saya</h2>
+                    <div class="order-list">
+                        <div class="order-item">
+                            <div class="order-info">
+                                <h4>#ORD-00123</h4>
+                                <p>Cuci Kiloan + Setrika - 3 kg</p>
+                                <p class="order-date">12 Nov 2023</p>
+                                <span class="status pending">Pending</span>
+                            </div>
+                            <div class="order-price">
+                                <p>Rp 54.000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="order-item">
+                            <div class="order-info">
+                                <h4>#ORD-00122</h4>
+                                <p>Dry Clean Jas - 1 item</p>
+                                <p class="order-date">10 Nov 2023</p>
+                                <span class="status in-progress">Dalam Proses</span>
+                            </div>
+                            <div class="order-price">
+                                <p>Rp 45.000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="order-item">
+                            <div class="order-info">
+                                <h4>#ORD-00121</h4>
+                                <p>Express Service - 2 kg</p>
+                                <p class="order-date">08 Nov 2023</p>
+                                <span class="status completed">Selesai</span>
+                            </div>
+                            <div class="order-price">
+                                <p>Rp 48.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-section">
+                    <h2>Pesan Layanan Baru</h2>
+                    <div class="service-buttons">
+                        <a href="layanan.html" class="btn-primary">Lihat Layanan</a>
+                        <button class="btn-secondary">Riwayat Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

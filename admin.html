@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - JLF & CO Laundry</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Admin Navbar -->
+    <nav class="navbar admin-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JLF & CO - Admin</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Kembali ke Situs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link btn-logout" id="logoutBtn">Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Dashboard -->
+    <section class="admin-dashboard">
+        <div class="container">
+            <h1 class="dashboard-title">Admin Dashboard</h1>
+            
+            <div class="dashboard-stats">
+                <div class="stat-card admin-stat">
+                    <h3>125</h3>
+                    <p>Order Hari Ini</p>
+                </div>
+                <div class="stat-card admin-stat">
+                    <h3>Rp 4.250.000</h3>
+                    <p>Pendapatan Hari Ini</p>
+                </div>
+                <div class="stat-card admin-stat">
+                    <h3>42</h3>
+                    <p>Order Dalam Proses</p>
+                </div>
+                <div class="stat-card admin-stat">
+                    <h3>98%</h3>
+                    <p>Kepuasan Pelanggan</p>
+                </div>
+            </div>
+            
+            <div class="dashboard-content">
+                <div class="dashboard-section">
+                    <h2>Order Terbaru</h2>
+                    <div class="order-list">
+                        <div class="order-item">
+                            <div class="order-info">
+                                <h4>#ORD-00123</h4>
+                                <p>Andi Wijaya - Cuci Kiloan + Setrika</p>
+                                <span class="status pending">Pending</span>
+                            </div>
+                            <div class="order-actions">
+                                <button class="btn-primary small">Proses</button>
+                            </div>
+                        </div>
+                        
+                        <div class="order-item">
+                            <div class="order-info">
+                                <h4>#ORD-00122</h4>
+                                <p>Sari Dewi - Dry Clean Jas</p>
+                                <span class="status in-progress">Dalam Proses</span>
+                            </div>
+                            <div class="order-actions">
+                                <button class="btn-primary small">Selesai</button>
+                            </div>
+                        </div>
+                        
+                        <div class="order-item">
+                            <div class="order-info">
+                                <h4>#ORD-00121</h4>
+                                <p>Rizki Pratama - Express Service</p>
+                                <span class="status completed">Selesai</span>
+                            </div>
+                            <div class="order-actions">
+                                <button class="btn-primary small">Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-section">
+                    <h2>Manajemen Layanan</h2>
+                    <div class="service-management">
+                        <button class="btn-primary">Tambah Layanan</button>
+                        <button class="btn-secondary">Edit Layanan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
